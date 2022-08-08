@@ -67,7 +67,7 @@ def calculation(crawle_length:int, crawle_width:int, pressure:float):
         print(f"[+] Исх давление, т/м2: {pressure}")
         print(f"[+] Новая длина опорной поверхности, мм: {new_legth}")
         print(f"[+] Новая ширина опорной поверхности, мм: {new_width}")
-        print(f"[+] Коеф увеличения опорной поверхности: {round(new_square / crane_square, 2)}\n")
+        print(f"[+] Коэф увеличения опорной поверхности: {round(new_square / crane_square, 2)}\n")
     for i in range(5):
         print(f"[+] Новая нагрузка для слоя #{i + 1} в т/м2: {new_load[i]}")
     return new_load[0], new_load[1]
